@@ -66,5 +66,6 @@
 		"sveltecraft",
 		"runes",
 		"inline-edit"
-	]
+	],
+	"license": "MIT"
 }
