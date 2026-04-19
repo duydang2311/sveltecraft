@@ -67,5 +67,15 @@
 		"runes",
 		"inline-edit"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"author": "duydang2311",
+	"repository": {
+        "type": "git",
+        "url": "git+https://github.com/duydang2311/sveltecraft.git"
+    },
+	"description": "A collection of well-crafted utilities for Svelte",
+	"bugs": {
+        "url": "https://github.com/duydang2311/sveltecraft/issues"
+    },
+    "homepage": "https://github.com/duydang2311/sveltecraft#readme"
 }
