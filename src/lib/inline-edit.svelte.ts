@@ -5,11 +5,12 @@ type InlineEdit = Attachment<HTMLElement> & {
 };
 
 export function createInlineEdit({
+	on = 'click',
 	defaultEnabled = false
-}: { defaultEnabled?: boolean } = {}): InlineEdit {
+}: { on?: 'click' | 'dblclick'; defaultEnabled?: boolean } = {}): InlineEdit {
 	let enabled = $state.raw(defaultEnabled);
 
-	function handleDblClick(): void {
+	function handleEnable(): void {
 		enabled = true;
 	}
 
@@ -30,10 +31,9 @@ export function createInlineEdit({
 			};
 		}
 
-		element.addEventListener('dblclick', handleDblClick);
-
+		element.addEventListener(on, handleEnable);
 		return () => {
-			element.removeEventListener('dblclick', handleDblClick);
+			element.removeEventListener(on, handleEnable);
 		};
 	};
 
