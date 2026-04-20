@@ -1,6 +1,6 @@
 import type { Attachment } from 'svelte/attachments';
 
-type InlineEdit = Attachment<HTMLElement> & {
+export type InlineEdit = Attachment<HTMLElement> & {
 	enabled: boolean;
 };
 
