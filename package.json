@@ -66,7 +66,13 @@
 		"helpers",
 		"sveltecraft",
 		"runes",
-		"inline-edit"
+		"attachments",
+		"inline-edit",
+		"intersection-observer",
+		"enter-view",
+		"leave-view",
+		"in-view",
+		"out-of-view"
 	],
 	"license": "MIT",
 	"author": "duydang2311",
