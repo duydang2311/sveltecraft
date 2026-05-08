@@ -1,1 +1,2 @@
-export * from './inline-edit.svelte';
+export * from './inline-edit.svelte.ts';
+export * from './intersection.ts';
